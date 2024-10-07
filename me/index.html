@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="image/logo.png" class="social-logo">
+    <title>Kang You's Personal Website</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="image/logo.png" alt="Logo" class="logo">
+            <h1>Welcome to <span class="blue-light">Kang</span> <span class="blue-dark">You</span>'s Personal Website</h1>
+        </div>
+        <p>Hi! I'm HEW KANG YOU. A passionate CS student with <a href="cert/CGPA.pdf" target="_blank">CGPA</a> of <del>3.72</del>.</p>
+    </header>    
+    <section id="about-container">
+        <div id="image-container">
+            <img src="image/Me.jpg" alt="Kang You's Picture" />
+        </div>
+        <div id="about">
+            <h2>About Me</h2>
+            <div id="selection-bar">
+                <button data-category="self-introduction" onclick="showContent('self-introduction')">Self-Introduction</button>
+                <button data-category="skills" onclick="showContent('skills')">Skills</button>
+                <button data-category="certificates" onclick="showContent('certificates')">Certificates</button>
+                <button data-category="education" onclick="showContent('education')">Education</button>
+                <button data-category="interests" onclick="showContent('interests')">Interests</button>
+            </div>
+            <div id="content">
+                <p>Select a category to learn more about me.</p>
+            </div>
+            <div id="resume-button-container">
+                <button onclick="viewResume()">View My Resume</button>
+            </div>            
+        </div>
+    </section>
+    <hr>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/kangu_0712/profilecard/?igsh=MmRncjJnMGtmbGFi" target="_blank">
+                    <img src="image/ig.png" alt="Instagram Logo" class="social-logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/kang-you-hew-9810a8280" target="_blank">
+                    <img src="image/linkedin.png" alt="LinkedIn Logo" class="social-logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/HewKangYou0712" target="_blank">
+                    <img src="image/github.png" alt="Github Logo" class="social-logo">
+                </a>
+            </li>
+            <li>
+                <a href="https://wa.me/601155494291" target="_blank">
+                    <img src="image/whatsapp.png" alt="Whatsapp Logo" class="social-logo">
+                </a>
+            </li>
+            <li>
+                <a href="mailto:hewkangyou0712@gmail.com" target="_blank">
+                    <img src="image/email.png" alt="Email Logo" class="social-logo">
+                </a>
+            </li>
+        </ul>
+    </section>    
+    <hr>
+    <footer>
+        <p>&copy; 2024 HEW KANG YOU. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <hr>
+</body>
+</html>
